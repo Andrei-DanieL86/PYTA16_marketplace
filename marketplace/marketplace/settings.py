@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'marketplaceapp.apps.MarketplaceappConfig', #pentru a activa modelele
+    'marketplaceapp.apps.MarketplaceappConfig', # pentru a activa modelele
     'register.apps.RegisterConfig'
 ]
 
@@ -126,3 +126,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = "/product_images/"
 MEDIA_ROOT = BASE_DIR
+
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
